@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="AIOVision.FrmHeaderTitle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AIOVision"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="32" d:DesignWidth="600">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:ColorZone Padding="0"
+                                          materialDesign:ElevationAssist.Elevation="Dp4"
+                                          Mode="PrimaryMid" Grid.ColumnSpan="2" VerticalAlignment="Center" d:LayoutOverrides="TopPosition, BottomPosition">
+            <DockPanel >
+                <Label Content="{Binding RelativeSource={RelativeSource AncestorType=UserControl}, Path=HeadName,Mode=TwoWay}" 
+                        MouseLeftButtonDown="border_MouseLeftButtonDown"
+                        Foreground="White" FontSize="13" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="44"
+                            Name="btn_Min" Click="btn_Min_Click"
+                            Visibility="{Binding RelativeSource={RelativeSource AncestorType=UserControl},Path=MinVis}"
+                            Content="{materialDesign:PackIcon Kind=MinusThick,Size=28}"
+                            Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}">
+                    </Button>
+                    <Button Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="44"
+                            Name="btn_Max" Click="btn_Max_Click"
+                            CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Window}}}"
+                            Visibility="{Binding RelativeSource={RelativeSource AncestorType=UserControl},Path=MaxVis}" 
+                            Content="{materialDesign:PackIcon Kind=CheckboxBlankOutline,Size=28}"
+                            Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}">
+                    </Button>
+                    <Button Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="44"
+                            Name="btn_Close" Click="btn_Close_Click" 
+                            CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Window}}}"
+                            Visibility="{Binding RelativeSource={RelativeSource AncestorType=UserControl},Path=CloseVis}" Margin="0 0 2 0"
+                            Content="{materialDesign:PackIcon Kind=WindowClose,Size=28}"
+                            Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}">
+                    </Button>
+                </StackPanel>
+            </DockPanel>
+        </materialDesign:ColorZone>
+    </Grid>
+
+</UserControl>

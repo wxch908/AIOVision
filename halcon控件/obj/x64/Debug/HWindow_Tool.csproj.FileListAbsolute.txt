@@ -1,0 +1,17 @@
+F:\Test\Demo9\VPTest1\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.AssemblyReference.cache
+F:\Test\Demo9\VPTest1\halcon控件\obj\x64\Debug\ChoiceTech.Halcon.Control.HWindow_Final.resources
+F:\Test\Demo9\VPTest1\halcon控件\obj\x64\Debug\ViewROI.Properties.Resources.resources
+F:\Test\Demo9\VPTest1\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.GenerateResource.cache
+F:\Test\Demo9\VPTest1\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.CoreCompileInputs.cache
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.AssemblyReference.cache
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HalconControl.HWindow_Final.resources
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\ViewROI.Properties.Resources.resources
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.GenerateResource.cache
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.CoreCompileInputs.cache
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\bin\x64\Debug\HWindow_Tool.dll.config
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\bin\x64\Debug\HWindow_Tool.dll
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\bin\x64\Debug\HWindow_Tool.pdb
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\bin\x64\Debug\halcondotnet.dll
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HWindow_Tool.csproj.CopyComplete
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HWindow_Tool.dll
+E:\0.项目\13.AIOVision\06.AIOVision\halcon控件\obj\x64\Debug\HWindow_Tool.pdb

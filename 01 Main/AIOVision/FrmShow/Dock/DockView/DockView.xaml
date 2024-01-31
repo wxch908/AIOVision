@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="AIOVision.DockView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AIOVision"
+             xmlns:Avalon ="https://github.com/Dirkster99/AvalonDock"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <!--停靠管理器类-->
+        <Avalon:DockingManager x:Name="dockManager"
+                               AllowMixedOrientation="True"
+                               AutoWindowSizeWhenOpened="True"
+                               IsVirtualizingAnchorable="True"
+                               IsVirtualizingDocument="True"
+                               Background="Transparent">
+
+            <Avalon:DockingManager.Theme>
+                <Avalon:Vs2013LightTheme/>
+            </Avalon:DockingManager.Theme>
+
+            <Avalon:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="0,0,4,0" Source="{Binding IconSource}" />
+                        <TextBlock Text="{Binding Title}" TextTrimming="CharacterEllipsis" />
+                    </StackPanel>
+                </DataTemplate>
+            </Avalon:DockingManager.DocumentHeaderTemplate>
+            <!--布局根节点类-->
+            <LayoutRoot>
+                <!--布局面板类-->
+                <LayoutPanel Orientation="Horizontal">
+                    <!--可停靠窗格容器-->
+                    <LayoutAnchorablePane DockWidth="320" >
+                        <!--可停靠内容类-->
+
+                        <!--工具栏-->
+                        <LayoutAnchorable AutoHideWidth="320" FloatingHeight="800" FloatingWidth="320"
+                                                              Title="工具栏"
+                                                              CanAutoHide="True"
+                                                              CanClose="False"
+                                                              CanHide="True" 
+                                                              ContentId="Tool"
+                                                              ToolTip="" >
+                            <local:ToolView/>
+                        </LayoutAnchorable>
+                    </LayoutAnchorablePane>
+                    <!--流程栏-->
+                    <LayoutAnchorablePane DockWidth="320" >
+                        <LayoutAnchorable AutoHideWidth="320" FloatingHeight="800" FloatingWidth="320"
+                                                              Title="流程栏"
+                                                              CanAutoHide="True"
+                                                              CanClose="False"
+                                                              CanHide="True" 
+                                                              ContentId="Process"
+                                                              ToolTip="">
+                            <local:Processbar/>
+                        </LayoutAnchorable>
+                    </LayoutAnchorablePane>
+                    <!--文档窗格组类-->
+                    <LayoutDocumentPaneGroup Orientation="Horizontal">
+                        <!--文档窗格容器-->
+                        <LayoutDocumentPane>
+                            <!--文档类-->
+                            <!--图像显示-->
+                            <!--<LayoutDocument Title="{lex:Loc Key=Dock_Vision}" x:Name="layoutDocument_Vision"
+                                            CanClose="False"
+                                            ContentId="Vision"
+                                            ToolTip="{lex:Loc Key=Dock_Vision}" Content="{x:Static local:VisionView.Ins}"/>-->
+                        </LayoutDocumentPane>
+                    </LayoutDocumentPaneGroup>
+                </LayoutPanel>
+                <!--信息显示-->
+                <LayoutRoot.BottomSide>
+                    <LayoutAnchorSide>
+                        <LayoutAnchorGroup>
+                            <LayoutAnchorable AutoHideHeight="300" FloatingHeight="300" AutoHideMinHeight="200"
+                                                  Title="日志信息" ToolTip=""
+                                                  ContentId="Log" Content=""/>
+                            <LayoutAnchorable AutoHideHeight="300" FloatingHeight="300" AutoHideMinHeight="200"
+                                                  Title="数据栏" ToolTip=""
+                                                  ContentId="Data" Content=""/>
+                            <LayoutAnchorable AutoHideHeight="300" FloatingHeight="300" AutoHideMinHeight="200"
+                                                  Title="模块输出" ToolTip=""
+                                                  ContentId="ModuleOut" Content=""/>
+                            <LayoutAnchorable AutoHideHeight="300" FloatingHeight="300" AutoHideMinHeight="200"
+                                                  Title="设备状态" ToolTip=""
+                                                  ContentId="DeviceState" Content=""/>
+                        </LayoutAnchorGroup>
+                    </LayoutAnchorSide>
+                </LayoutRoot.BottomSide>
+            </LayoutRoot>
+        </Avalon:DockingManager>
+    </Grid>
+</UserControl>

@@ -1,0 +1,15 @@
+E:\0.项目\13.AIOVision\06.AIOVision\00 Exe\ModuleFrm.dll.config
+E:\0.项目\13.AIOVision\06.AIOVision\00 Exe\ModuleFrm.dll
+E:\0.项目\13.AIOVision\06.AIOVision\00 Exe\ModuleFrm.pdb
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.csproj.AssemblyReference.cache
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrmHeaderTitle.g.cs
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm_MarkupCompile.cache
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm_MarkupCompile.lref
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrmHeaderTitle.baml
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.g.resources
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.Properties.Resources.resources
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.csproj.GenerateResource.cache
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.csproj.CoreCompileInputs.cache
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.csproj.CopyComplete
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.dll
+E:\0.项目\13.AIOVision\06.AIOVision\01 Main\ModuleFrm\obj\Debug\ModuleFrm.pdb
